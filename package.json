@@ -1,0 +1,22 @@
+{
+  "name": "fm-nft-preview-card",
+  "version": "1.0.0",
+  "description": "This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvruntime/fm-nft-preview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvruntime/fm-nft-preview/issues"
+  },
+  "homepage": "https://github.com/kvruntime/fm-nft-preview#readme",
+  "devDependencies": {
+    "parcel":"*"
+  }
+}
