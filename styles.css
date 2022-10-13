@@ -1,0 +1,166 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Manrope:wght@800&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&display=swap');
+
+/* VARS */
+:root {
+	--color-soft-blue: hsl(215, 51%, 70%);
+	--color-cyan: hsl(178, 100%, 50%);
+	--main-bg: hsl(217, 54%, 11%);
+	--card-bg: hsl(216, 50%, 16%);
+	--color-line: hsl(215, 32%, 27%);
+	--color-white: hsl(0, 0%, 100%);
+}
+
+/* TYPOGRAPHY */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Outfit', 'sans-serif';
+}
+
+body {
+	font-size: 18px;
+	margin: 10px;
+	height: 100vh;
+}
+
+picture,
+figure,
+img {
+	max-width: 100%;
+}
+
+/* CONTAINER */
+.container {
+	height: 100%;
+	background-color: var(--main-bg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ICON */
+.icon {
+	aspect-ratio: 1/1;
+	width: 20px;
+}
+
+/* NTF-CARD */
+
+.ntf-highlihtable {
+	transition: all 0.5s;
+}
+.ntf-highlihtable:hover {
+	color: var(--color-cyan);
+}
+
+.ntf {
+	border-radius: 10px;
+	min-width: 200px;
+	max-width: 280px;
+	background-color: var(--card-bg);
+	padding: 2rem;
+    margin: 1rem .5rem;
+}
+
+.nft__header {
+	display: flex;
+	flex-direction: column;
+}
+.nft__picture {
+	width: auto;
+	align-self: center;
+	border-radius: 10px;
+	position: relative;
+    overflow: hidden;
+}
+
+.ntf__view {
+	height: 100%;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-cyan);
+	background-color: hsla(178, 100%, 50%, 0.445);
+	z-index: 3;
+	position: absolute;
+	max-height: 0;
+    opacity: 0;
+    top: 0%;
+    transition: all .5s;
+}
+
+.nft__picture:hover .ntf__view {
+	max-height: 100%;
+    opacity: 1;
+}
+
+.ntf__view img {
+	opacity: 1;
+}
+
+.ntf__heading {
+	color: var(--color-white);
+	margin: 0;
+	margin-top: 2rem;
+}
+
+.nft__description {
+	color: var(--color-white);
+	opacity: 0.7;
+}
+.ntf__infos {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+}
+.ntf__infos * {
+	display: flex;
+	vertical-align: middle;
+}
+
+.ntf__infos .icon {
+	margin-right: 0.5rem;
+}
+
+.ntf__infos span:first-of-type {
+	color: var(--color-cyan);
+}
+.ntf__infos span:nth-of-type(2) {
+	color: var(--color-soft-blue);
+}
+
+hr {
+	color: var(--color-line);
+	margin-top: 1.5rem;
+}
+
+.nft__footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.ntf__profile {
+	aspect-ratio: 1/1;
+	width: 40px;
+	border: 2px solid var(--color-white);
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.ntf__profile-description {
+	color: var(--color-white);
+	opacity: 0.5;
+}
+
+.ntf__profile-name {
+	color: var(--color-white);
+	opacity: 1;
+}
